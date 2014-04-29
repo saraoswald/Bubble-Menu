@@ -1,0 +1,42 @@
+/* link styles */
+#nav ul{
+	font-size:17px;
+	text-align:left;
+	text-decoration:none;
+	padding:5px;
+	font-weight:normal
+	}
+
+/* drop-down effect */
+#nav > ul li{display:inline;font-size:17px;}
+#nav > ul > ul{display:inline;z-index:10;padding:0px;}
+#nav > ul > ul li{padding-right:2px;display:auto;float:none;}
+#nav > ul > ul > li:last-child{position:absolute;z-index:-1;opacity:0;display:block;font-size:13px;}
+#nav > ul > ul:hover > li:last-child{;position:absolute;opacity:1;z-index:10;left:145px;margin-top:7px;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;  
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;}
+    
+/* Below is the bubble effect, which is completely optional */
+
+.bubble{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #eee;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;  
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    }
+.bubble:hover{
+    background-color: #fff;
+    transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;  
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    }
